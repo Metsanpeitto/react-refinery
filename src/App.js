@@ -1,41 +1,42 @@
 import React, { useState, useEffect } from "react"
+import { useDispatch, useSelector } from 'react-redux';
 import { GoogleLogin } from 'react-google-login';
 import Dashboard from './pages/Dashboard';
+import { addUser } from './redux/reducers/auth/auth';
+
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 function App() {
+  const dispatch = useDispatch();
+  const { authReducer } = useSelector((state) => state);
+  const { auth } = authReducer;
   const [logged, setLogged] = useState(null)
-  const [token, setToken] = useState(null)
+
+
   const responseGoogle = (response) => {
-    console.log(response);
     if (response) {
       if (response.tokenId) {
-        setLogged(true)
-        setToken(logged)
-        console.log(logged);
+        dispatch(addUser(response))
       }
     }
   }
 
   useEffect(() => {
-    console.log(logged)
-    if (logged) {
-      setToken(logged)
-      console.log(token)
+    if (auth.Ba) {
+      setLogged(true)
     }
-  }, logged);
+  }, auth.Ba);
 
   return (
-    <div className="">
+    <section>
       {!logged ? <GoogleLogin
-        clientId="835224766406-3ar6uifbo7d91dnps3qep31gvmdijdfb.apps.googleusercontent.com"
+        clientId={process.env.REACT_APP_GOOGLE_USER_ID}
         buttonText="Login"
         onSuccess={responseGoogle}
         onFailure={responseGoogle}
         cookiePolicy={'single_host_origin'}
-      /> : null}
-      {token ? <Dashboard /> : null}
-    </div>)
+      /> : <Dashboard />}
+    </section>)
 }
 export default App;
 

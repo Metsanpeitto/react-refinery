@@ -15,7 +15,6 @@ function Dashboard() {
     const dateAfterTomorrow = new Date(date.setDate(date.getDate() + 2));
 
     const handleClick = (date) => {
-        // Open Modal
         setSelectedDate(date);
         setFormOpen(true)
         console.log(date)
