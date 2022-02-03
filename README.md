@@ -1,5 +1,7 @@
 # ReactJs & Google Calendar
 
+<img src="img/refinery.png">
+
  This task is a prototype of a booking system, where users can select appointmens for an event, based on
 the free hours that the administrator has in his own Google Calendar.
 
@@ -8,6 +10,9 @@ the free hours that the administrator has in his own Google Calendar.
  Once in the app, when one user selects one of the possible time for appointments, google calendar launches a popup
 to handle the authentication of the user. Afterwards, if succesfully signed up,the event will be added
 to the users Calendar, as well as to the calendar of the administrator. 
+
+ In order to monitor the calendar, the administrator must to know the email account related to the Google Calendar, Google Project, Oauth and so on. That information will be provided through email by myself to the people who ordered me this task. 
+
 
 
 ## Built With 
@@ -23,19 +28,15 @@ to the users Calendar, as well as to the calendar of the administrator.
 
 If you want a copy of this file go to the github repository and download it from there
 
-- [`git clone https://github.com/Metsanpeitto/spacex-capstone-3`](https://github.com/Metsanpeitto/spacex-capstone-3)
+- [`git clone https://github.com/Metsanpeitto/react-refinery`](https://github.com/Metsanpeitto/react-refinery)
 
-
-### Live
-
-[Live](https://github.com/Metsanpeitto/spacex-capstone-3/)
 
 
 ### Setup
 
 ```cmd
-git clone  https://github.com/Metsanpeitto/spacex-capstone-3.git
-cd ./spacex-capstone-3
+git clone  https://github.com/Metsanpeitto/react-refinery.git
+cd ./react-refinery
 ```
 
 ### Install
@@ -98,14 +99,6 @@ If you are non a technical person you can download the zip file.
 - LinkedIn: [Abraham Rodriguez](https://www.linkedin.com/in/abraham-rodriguez-3283a319a/)
 - Portfolio: [Waldenberg](https://portfolio.waldenberginc.com)
 
-👤 **Onur Onat Surmeli**
-
-- GitHub: [@Zibilyonik](https://github.com/Zibilyonik)
-- Twitter: [@OnurSurmeli2](https://twitter.com/OnurSurmeli2)
-- LinkedIn: [Onur Onat Surmeli](https://www.linkedin.com/in/onuronatsurmeli/)
-- Portfolio: [Click Here!](https://zibilyonik.github.io/portfolio/)
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -116,13 +109,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-
-## Acknowledgments
-
-- Microverse for giving me this chance
-- The amazing code reviewers for making me improve every day :thumbsup:
-
 
 
 [![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)
