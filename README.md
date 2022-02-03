@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# ReactJs & Google Calendar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ This task is a prototype of a booking system, where users can select appointmens for an event, based on
+the free hours that the administrator has in his own Google Calendar.
 
-## Available Scripts
+ To do this I used the Google API and various of its resources, as the calendar and the authentication system.
 
-In the project directory, you can run:
+ Once in the app, when one user selects one of the possible time for appointments, google calendar launches a popup
+to handle the authentication of the user. Afterwards, if succesfully signed up,the event will be added
+to the users Calendar, as well as to the calendar of the administrator. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- HTML/CSS
+- React.JS
+- Node.JS
+- Redux
+- Google API
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+If you want a copy of this file go to the github repository and download it from there
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [`git clone https://github.com/Metsanpeitto/spacex-capstone-3`](https://github.com/Metsanpeitto/spacex-capstone-3)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Live
 
-### `npm run eject`
+[Live](https://github.com/Metsanpeitto/spacex-capstone-3/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```cmd
+git clone  https://github.com/Metsanpeitto/spacex-capstone-3.git
+cd ./spacex-capstone-3
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Install
 
-## Learn More
+```cmd
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```cmd
+npm start
+```
 
-### Code Splitting
+### Verify linters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```cmd
+npx eslint .
+npx stylelint "**/*.{css,scss}"
+```
+- Autofix linters errors
 
-### Analyzing the Bundle Size
+```cmd
+npx eslint . --fix
+npx stylelint "**/*.{css,scss}" --fix
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## To run jest test
+```cmd
+npm run test
+npm run jest
+```
 
-### Making a Progressive Web App
+If you are non a technical person you can download the zip file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- To do that you have to go to the green button that says 'Code' and then press on it.
+- Choose the option 'Download Zip' and wait until it download.
+- Then you need to decompress it.
+- You will need to have Zip compress file software installed in your computer. If you don't have it you can download it from here
+  [`https://www.7-zip.org/download.html`](https://www.7-zip.org/download.html)
+- Do double click on the Capstone-1.zip and choose a folder where to place all teh decompressed files.
+- Once you are done decompressing, you can open the created folder.
+- In it you can double click on the index.html file and choose a browser to open it (For example google Chrome Browser).
+- Now you should be able to see the project.
+- Remember to use the mouse to navigate through the website. Also you can use the keys 'arrow up' and 'arrow down' of your keyboard
+  to scroll up and down. 
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Prerequisites
 
-### Deployment
+- Node.JS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 **Abraham Rodriguez**
+
+- GitHub: [@metsanpeitto](https://github.com/Metsanpeitto)
+- Twitter: [@metsanpeitto](https://twitter.com/home)
+- LinkedIn: [Abraham Rodriguez](https://www.linkedin.com/in/abraham-rodriguez-3283a319a/)
+- Portfolio: [Waldenberg](https://portfolio.waldenberginc.com)
+
+👤 **Onur Onat Surmeli**
+
+- GitHub: [@Zibilyonik](https://github.com/Zibilyonik)
+- Twitter: [@OnurSurmeli2](https://twitter.com/OnurSurmeli2)
+- LinkedIn: [Onur Onat Surmeli](https://www.linkedin.com/in/onuronatsurmeli/)
+- Portfolio: [Click Here!](https://zibilyonik.github.io/portfolio/)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Microverse for giving me this chance
+- The amazing code reviewers for making me improve every day :thumbsup:
+
+
+
+[![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)

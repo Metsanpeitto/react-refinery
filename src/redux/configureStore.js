@@ -1,12 +1,10 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import reservationsReducer from './reducers/reservations/reservations';
-import authReducer from './reducers/auth/auth';
+import datesReducer from './reducers/dates/dates';
 
 const reducer = combineReducers({
-  reservationsReducer,
-  authReducer,
+  datesReducer
 });
 
 const store = createStore(reducer, applyMiddleware(thunk, logger));
